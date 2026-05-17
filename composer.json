@@ -4,10 +4,10 @@
     "type": "library",
     "license": "MIT",
     "keywords": ["laravel", "cache", "image", "helpers", "storage", "placeholder"],
-    "homepage": "https://github.com/banulakwin/laravel-support-helpers",
+    "homepage": "https://github.com/banulalakwindu/laravel-support-helpers",
     "support": {
-        "issues": "https://github.com/banulakwin/laravel-support-helpers/issues",
-        "source": "https://github.com/banulakwin/laravel-support-helpers"
+        "issues": "https://github.com/banulalakwindu/laravel-support-helpers/issues",
+        "source": "https://github.com/banulalakwindu/laravel-support-helpers"
     },
     "require": {
         "php": "^8.4",

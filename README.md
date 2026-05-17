@@ -1,7 +1,7 @@
 # Laravel Support Helpers (`banulakwin/laravel-support-helpers`)
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/banulakwin/laravel-support-helpers.svg?style=flat-square)](https://packagist.org/packages/banulakwin/laravel-support-helpers)
-[![Tests](https://github.com/banulakwin/laravel-support-helpers/actions/workflows/tests.yml/badge.svg)](https://github.com/banulakwin/laravel-support-helpers/actions/workflows/tests.yml)
+[![Tests](https://github.com/banulalakwindu/laravel-support-helpers/actions/workflows/tests.yml/badge.svg)](https://github.com/banulalakwindu/laravel-support-helpers/actions/workflows/tests.yml)
 [![Total Downloads](https://img.shields.io/packagist/dt/banulakwin/laravel-support-helpers.svg?style=flat-square)](https://packagist.org/packages/banulakwin/laravel-support-helpers)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](LICENSE)
 
