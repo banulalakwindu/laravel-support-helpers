@@ -1,0 +1,64 @@
+{
+    "name": "banulakwin/laravel-support-helpers",
+    "description": "Small Laravel helpers: public/storage image URLs and production-only flexible cache wrapper.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["laravel", "cache", "image", "helpers", "storage", "placeholder"],
+    "homepage": "https://github.com/banulakwin/laravel-support-helpers",
+    "support": {
+        "issues": "https://github.com/banulakwin/laravel-support-helpers/issues",
+        "source": "https://github.com/banulakwin/laravel-support-helpers"
+    },
+    "require": {
+        "php": "^8.4",
+        "illuminate/cache": "^11.0|^12.0|^13.0",
+        "illuminate/contracts": "^11.0|^12.0|^13.0",
+        "illuminate/filesystem": "^11.0|^12.0|^13.0",
+        "illuminate/support": "^11.0|^12.0|^13.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.21",
+        "orchestra/testbench": "^9.0|^10.0",
+        "phpstan/phpstan": "^2.0",
+        "phpunit/phpunit": "^11.0|^12.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Banulakwin\\SupportHelpers\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Banulakwin\\SupportHelpers\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Banulakwin\\SupportHelpers\\SupportHelpersServiceProvider"
+            ],
+            "aliases": {
+                "PublicImage": "Banulakwin\\SupportHelpers\\Facades\\PublicImage",
+                "FlexibleCache": "Banulakwin\\SupportHelpers\\Facades\\FlexibleCache"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "preferred-install": "dist"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "test:coverage": "phpunit --coverage-html coverage",
+        "pint": "pint",
+        "pint:check": "pint --test",
+        "phpstan": "phpstan analyse",
+        "analyse": "@phpstan",
+        "quality": ["@pint", "@phpstan", "@test"]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
