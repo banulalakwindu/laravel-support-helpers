@@ -31,7 +31,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          composer require "illuminate/cache:${{ matrix.laravel }}" "illuminate/contracts:${{ matrix.laravel }}" "illuminate/filesystem:${{ matrix.laravel }}" "illuminate/support:${{ matrix.laravel }}" --no-interaction --no-update
+          composer require "illuminate/cache:${{ matrix.laravel }}" "illuminate/contracts:${{ matrix.laravel }}" "illuminate/filesystem:${{ matrix.laravel }}" "illuminate/support:${{ matrix.laravel }}" "orchestra/testbench:${{ matrix.laravel == '11.*' && '^9.0' || (matrix.laravel == '12.*' && '^10.0' || '^11.0') }}" --no-interaction --no-update
           composer update --prefer-dist --no-interaction --no-progress
 
       - name: Execute tests
